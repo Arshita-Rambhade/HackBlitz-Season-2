@@ -1,0 +1,395 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #007BFF;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: url('homepage.jpeg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero p, .hero .btn {
+    position: relative;
+    z-index: 2;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 25px;
+    background: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #e65c00;
+}
+
+
+/* Key Features */
+#features {
+    padding: 50px;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-box {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Common Health Issues */
+#problems {
+    padding: 50px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.problem-box {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.problem-box:hover {
+    transform: scale(1.1);
+}
+
+.problem-box .hover-content {
+    display: none;
+    font-size: 14px;
+    color: red;
+}
+
+.problem-box:hover .hover-content {
+    display: block;
+}
+
+/* About Us and Contact */
+#about, #contact {
+    padding: 50px;
+    text-align: center;
+    background: #007BFF;
+    color: white;
+}
+.add-member {
+    width: 50%;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+/* Add Member Section */
+.add-member {
+    width: 50%;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.add-member h2 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.add-member p {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Medicine Section */
+.medicine-entry {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#addMedicine {
+    background: #28a745;
+}
+
+#addMedicine:hover {
+    background: #218838;
+}
+
+/* Success Message */
+.hidden {
+    display: none;
+}
+
+#success-message {
+    margin-top: 20px;
+    background: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    color: #155724;
+    font-weight: bold;
+}
+
+/* Family Members Section */
+.family-overview {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.family-overview h2 {
+    margin-bottom: 20px;
+}
+
+#family-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.alert {
+    background: #ffcccc;
+    border-left: 5px solid red;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #007BFF;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Add Member Section */
+.add-member {
+    width: 50%;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.add-member h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Family Members List */
+#family-list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

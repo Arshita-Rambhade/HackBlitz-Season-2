@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Family Member</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <h2>MedGuardian</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Key Features</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="add-member">
+        <h2>Add Family Member</h2>
+        <p>Enter details to add a new family member and track their medication.</p>
+
+        <form id="addMemberForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter full name" required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Enter age" required>
+
+            <label for="relation">Relation</label>
+            <input type="text" id="relation" placeholder="E.g., Father, Mother, Brother" required>
+
+            <h3>Medicine Details</h3>
+            <div id="medicine-container">
+                <div class="medicine-entry">
+                    <label for="medicine">Medicine Name</label>
+                    <input type="text" class="medicine" placeholder="Enter medicine name" required>
+
+                    <label for="dose">Doses Per Day</label>
+                    <input type="number" class="dose" placeholder="E.g., 2" required>
+
+                    <label for="time">Medicine Time</label>
+                    <input type="time" class="time" required>
+                </div>
+            </div>
+
+            <button type="button" id="addMedicine">+ Add Another Medicine</button>
+            <button type="submit">Save Member</button>
+        </form>
+
+        <p id="success-message" class="hidden">Family member added successfully! ✅</p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
